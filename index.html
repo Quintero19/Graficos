@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energías Renovables</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Gráfica de Energía Renovable</h1>
+  <div>
+    <label for="countrySelector">Seleccione el país (Energía Renovable):</label>
+    <select id="countrySelector">
+      <option value="">Select a Country</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="countrySelector2">Seleccione el país (Energía Eléctrica):</label>
+    <select id="countrySelector2">
+      <option value="">Select a Country</option>
+    </select>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-container">
+      <canvas id="energyChart1"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="energyChart2"></canvas>
+    </div>
+  </div>
+  <div>
+    <label for="countrySelector3">Seleccione el país (Capacidad Eólica):</label>
+    <select id="countrySelector3">
+      <option value="">Select a Country</option>
+    </select>
+  </div>
+  <div class="chart-container-full">
+    <canvas id="energyChart3"></canvas>
+  </div>
+  <script src="datos.js"></script>
+</body>
+</html>
